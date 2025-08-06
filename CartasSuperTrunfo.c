@@ -29,10 +29,10 @@ int main() {
     scanf(" %c", &estado);
 
     printf("Digite o codígo:\n");
-    scanf("%s", &codigo);
+    scanf("%s", codigo);
 
     printf("Digite o nome da cidade:\n");
-    scanf("%s", &cidade);
+    scanf("%s", cidade);
 
     printf("Digite a população:\n");
     scanf("%d", &populacao);
@@ -51,10 +51,10 @@ int main() {
     scanf(" %c", &estado2);
 
     printf("Digite o codígo:\n");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
 
     printf("Digite o nome da cidade:\n");
-    scanf("%s", &cidade2);
+    scanf("%s", cidade2);
 
     printf("Digite a população:\n");
     scanf("%d", &populacao2);
