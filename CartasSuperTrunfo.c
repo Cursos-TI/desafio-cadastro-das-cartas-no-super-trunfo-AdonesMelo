@@ -58,7 +58,7 @@ int main() {
     scanf("%s", codigo2);
 
     printf("Digite o nome da cidade:\n");
-    scanf(" %[^\n]", cidade); // permitir espaços
+    scanf(" %[^\n]", cidade2); // permitir espaços
 
     printf("Digite a população:\n");
     scanf("%d", &populacao2);
