@@ -114,13 +114,13 @@ int main() {
     printf("PIB per Capita: %.2f reais\n", pip_capito2);
 
     // Comparar as cartas
-    int populacao = populacao1 >= populacao2;
-    int area = area1 >= area2;
-    int pib = pib1 >= pib2;
-    int num_turistico = num_turistico1 >= num_turistico2;
-    int densidade = densidade1 <= densidade2; // menor densidade é melhor
-    int pip_capito = pip_capito1 >= pip_capito2;
-    int super_poder = super_poder1 >= super_poder2;
+    int populacao = populacao1 > populacao2;
+    int area = area1 > area2;
+    int pib = pib1 > pib2;
+    int num_turistico = num_turistico1 > num_turistico2;
+    int densidade = densidade1 < densidade2; // menor densidade é melhor
+    int pip_capito = pip_capito1 > pip_capito2;
+    int super_poder = super_poder1 > super_poder2;
 
     printf("\nComparação de Cartas:\n");
     printf("População: Carta %d venceu (%d)\n", populacao ? 1 : 2, populacao);
@@ -130,6 +130,20 @@ int main() {
     printf("Densidade Populacional: Carta %d venceu(%d)\n", densidade ? 1 : 2, densidade);
     printf("PIB per Capita: Carta %d venceu (%d)\n", pip_capito ? 1 : 2, pip_capito);
     printf("Super Poder: Carta %d venceu (%d)\n", super_poder ? 1 : 2, super_poder);
+
+    // Comparar um atributo usando uma condicional
+    int resultado_1_atributo;
+
+    resultado_1_atributo = populacao1 > populacao2;
+
+    printf("\nCarta 1 - %s: %d\n", cidade1, populacao1);
+    printf("Carta 2 - %s: %d\n", cidade2, populacao2);
+
+    if (resultado_1_atributo) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+    } else {
+        printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+    }
     
     return 0;
 }
